@@ -1,12 +1,8 @@
-Name: Raj Mohan Tumarada
-Matriculation Number: 7015640
-Purpose: Final project submission as part of Model Driven Deep Learning Lab for Image Analysis (MDDL) course.
 
-
-
-PyTorch implementation of MoDL: Model Based Deep Learning Architecture for Inverse Problems 
+PyTorch implementation of MoDL: Model Based Deep Learning Architecture for Inverse Problems and comparision with pretrained models
 
 Official code: https://github.com/hkaggarwal/modl
+Official pyTorch code:https://github.com/bo-10000/MoDL_PyTorch
 
 
 
@@ -21,7 +17,7 @@ IEEE Xplore: https://ieeexplore.ieee.org/document/8434321/
 
 ## Project Goals
 1)Understanding and describing the methodology in the paper, and where it differs and improves upon previous works
-2)Clean reimplementation following modern coding practices in either TF or pytorch
+2)Clean reimplementation following modern coding practices in either pytorch
 3)Comparison to using a pretrained denoiser instead of end-to-end training
 
 ## Comments 
@@ -29,7 +25,7 @@ IEEE Xplore: https://ieeexplore.ieee.org/document/8434321/
 -The training details along with tensorboard logs were present in  MDDL_proj.ipnyb file 
 -For tensorboard the following runs are the final(base_modlt,k=10/train, base_modlptw,k=10/train, base_modlns,k=10/train, base_modlt,k=10/test, base_modlptw,k=10/test, base_modlns,k=10/test)
 -Attaching the report which briefs about paper and its results
--Not submitting the dataset as it is roughly around 3 GB if necessary can be downloaded from the below link
+
 
 
 ## Dataset
