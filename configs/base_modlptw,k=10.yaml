@@ -1,0 +1,54 @@
+config_name: base_modlptw,k=10
+description: "base configpt, k=10. Using pretrained weights for denoiser within each iterartion>"
+
+n_layers: 5
+k_iters: 10
+epochs: 50
+pretrained: True
+
+dataset_name: modl_dataset
+dataset_params:
+  dataset_path: 'data/dataset.hdf5'
+  sigma: 0.01
+val_data: False
+batch_size: 1
+
+model_name: base_modl
+
+restore_weights: False #False, best, inter, final
+restore_path: 'workspace/base_modl,k=1/checkpoints/'
+
+loss_name: MSE
+score_names: ['PSNR', 'SSIM']
+optim_name: Adam
+optim_params:
+  lr: 0.001
+gradient_clip: True
+
+
+
+#config_name: base_modl,k=10
+#description: "base config, k=10. Restore weights from <base_modl,k=1>"
+
+#n_layers: 20
+#k_iters: 10
+#epochs: 1
+
+#dataset_name: modl_dataset
+#dataset_params:
+#  dataset_path: 'data/dataset.hdf5'
+#  sigma: 0.01
+#val_data: False
+#batch_size: 1
+
+#model_name: base_modl
+
+#restore_weights: model.pt #False, best, inter, final
+#restore_path: 'BSD400_grey/'
+
+#loss_name: MSE
+#score_names: ['PSNR', 'SSIM']
+#optim_name: Adam
+#optim_params:
+#  lr: 0.001
+#gradient_clip: True
